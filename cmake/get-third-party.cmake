@@ -1,4 +1,4 @@
-# Google tests 
+# Google tests
 find_package(GTest PATHS ${CMAKE_BINARY_DIR})
 
 if ( NOT ${GTest_FOUND})
@@ -25,6 +25,7 @@ execute_process(COMMAND "${CMAKE_COMMAND}" -G "${CMAKE_GENERATOR}" .
 execute_process(COMMAND "${CMAKE_COMMAND}" --build .
     WORKING_DIRECTORY "${CMAKE_BINARY_DIR}/thirdparty"
 )
+
 message("")
 message(STATUS "Configuration of fastest-lap")
 #######################################################################

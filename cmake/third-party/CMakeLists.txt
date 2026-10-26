@@ -3,10 +3,10 @@ cmake_minimum_required(VERSION 3.10)
 # set the project name
 project(fastest-lap-third-party VERSION 1.0)
 
-SET(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake ${CMAKE_MODULE_PATH})
+SET(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake ${CMAKE_MODULE_PATH})
 
 set(THIRD_PARTY_DIR ${CMAKE_BINARY_DIR})
-set(PATCH_DIR ${CMAKE_SOURCE_DIR}/cmake/patch)
+set(PATCH_DIR ${CMAKE_CURRENT_SOURCE_DIR}/cmake/patch)
 
 set(BUILD_GTEST ${BUILD_GTEST})
 set(BUILD_LION ${BUILD_LION})
